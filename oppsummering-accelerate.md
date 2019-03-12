@@ -3,7 +3,7 @@
 _Building and scaling high performing technology organizations.  
 Bok av Gene Kim, Jez Humble, og Nicole Forsgren._
 
-Boka handler om hva som skal til for å bli en mer leveransedyktig og høytpresterende IT-organisasjon, som leverer mer verdi på kortere tid. Den baserer seg på _State of DevOps_ -rapportene fra 2014-2018. Forfatterne går vitenskapelig og nøye til verks i å svare på hva, hvorfor og hvordan rundt både tekniske metoder praksiser og ledelse.
+Boka handler om hva som skal til for å bli en mer leveransedyktig og høytpresterende IT-organisasjon, som leverer mer verdi på kortere tid. Den baserer seg på _State of DevOps_ -rapportene fra 2014-2018. Forfatterne går vitenskapelig til verks i å forklare hva, hvorfor og hvordan rundt både ledelse og tekniske metoder og praksiser.
 
 Boka er tredelt: 
 
