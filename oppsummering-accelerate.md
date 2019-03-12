@@ -155,12 +155,12 @@ Smidig er jevnt over den foretrukne utviklingsmetoden, men blir ofte mangelfullt
 
 **Lean / smidig produktutvikling** står for det motsatte; Eksperimentell tilnærming med hyppig brukertesting av både design og forretningsmodell, fra starten av produktets livssyklus. Arbeidet deles opp i mindre bolker som leveres fortløpende.
 
-Effektivisering av leveranseprosessen gjør det enklere å jobbe med mindre bolker om gangen, samt innhente bruker-feedback underveis. Å levere i mindre bolker gir raskere _feedback_ loops_.
+Effektivisering av leveranseprosessen gjør det enklere å jobbe med mindre bolker om gangen, samt innhente bruker-feedback underveis. Å levere i mindre bolker gir raskere _feedback loops_.
 
 **Følgende er viktige egenskaper for en effektiv prosess:**
 
 ### Innhente og dra nytte av tilbakemelding fra brukere
-Et poeng i smidig utvikling er å involvere brukerne tidlig i utviklingsløpet, for å få nyttig input og tilbakemeldinger. Disse tilbakemeldingene brukes så videre i neste steg av prosessen, før man jakter nye tilbakemeldinger igjen (feedback loop).
+Et poeng i smidig utvikling er å involvere brukerne tidlig i utviklingsløpet, for å få nyttig input og tilbakemeldinger. Disse tilbakemeldingene brukes så videre i neste steg av prosessen, før man jakter nye tilbakemeldinger igjen (_feedback loop_).
 
 Forskningen viser at å aktivt søke tilbakemeldinger fra brukere, samt inkorporere lærdommen i produktet, er viktig for prestasjonen.
 
@@ -183,21 +183,21 @@ Lean management fører til bedre kultur (generativ), bedre leveranseevne og redu
 *Følgende er viktige egenskaper ved lean management:*
  
 ### Enkel prosess for godkjenning av endringer
-Parprogrammering og pull request internt i teamet, kombinert med deploy pipeline (push - bygg - test - deploy / release) for å bl.a oppdage og avslå endringer av lav kvalitet, er effektivt. Produksjonssetting / release bør være en helautomatisert prosess, som trigges gjennom deployment pipeline.
+Parprogrammering og pull request internt i teamet, kombinert med deploy pipeline (push - bygg - test - deploy / release) for å bl.a oppdage og avslå endringer av lav kvalitet, er effektivt. Deploy / release bør være en helautomatisert prosess, som trigges gjennom deployment pipeline.
 
-Teams som må ha code review og godkjenning av noen utenfor teamet (f.eks manager / change advisory board), presterer dårligere. Det gir heller ikke bedre stabilitet. 
+Teams som må ha code review og godkjenning av noen utenfor teamet (f.eks _change advisory board_), presterer dårligere. Det gir heller ikke bedre stabilitet. 
 
 Ekstern godkjenning gir lengre ledetid, tregere leveransetakt og har ingenting å si for change/failure-rate. Det er verre enn å ikke ha en godkjenningsprosess i det hele tatt. I boka blir det blir beskrevet som “**risk management theater**”. Det er teamet som kjenner systemet og som best forstår effekten av endringene.
 
 ### Overvåking av applikasjoner og infrastruktur
 Data og lærdom fra overvåking av applikasjoner og infrastruktur kan brukes til å treffe bedre beslutninger. I tillegg til overvåking for varsling feil, bør man kjøre helsesjekker som kan varsle basert på terskelverdier og rate-of-change warnings, f.eks om CPU har økt med 25% de siste 10 minuttene.
 
-Synligheten og gjennomsiktigheten som oppnås ved effektiv overvåking er uvurderlig. Proaktiv monitorering er sterkt relatert til prestasjon og medarbeidertilfredshet, og er en viktig del av en teknisk rigg.
+Synligheten og gjennomsiktigheten som oppnås ved effektiv overvåking er uvurderlig. Proaktiv monitorering er sterkt relatert til høy prestasjon og medarbeidertilfredshet, og er en viktig del av en teknisk rigg.
 
 ### WIP-limits og visualisering av arbeid
-_Work in progress (WIP) limit_ definerer hvor mange oppgaver teamet kan håndtere samtidig. Meningen med WIP-limits er å optimalisere flyt (gjennom å f.eks unngå context switching) ved å begrense antall samtidige oppgaver. Det øker gjennomstrømningen av oppgaver og synliggjør flaskehalser.
+_Work in progress (WIP) limit_ definerer hvor mange oppgaver teamet kan håndtere samtidig. Meningen med _WIP-limits_ er å optimalisere flyt (gjennom å f.eks unngå _context switching_) ved å begrense antall samtidige oppgaver. Det øker gjennomstrømningen av oppgaver og synliggjør flaskehalser.
 
-Et interessant funn er at WIP-limits alene ikke har stor betydning for leveranseevne. Det er først når det kombineres med visuelle oversikter (f.eks kanban-tavler / skjermer, som viser work in progress) og feedback loops fra produksjon, at WIP-limits gir stor verdi. Det hindrer at teamet har for mange oppgaver, som vil gi lengre ledetid.
+Et interessant funn er at _WIP-limits_ alene ikke har stor betydning for leveranseevne. Det er først når det kombineres med visuelle oversikter (f.eks kanban-tavler / skjermer, som viser _work in progress_) og feedback loops fra produksjon, at WIP-limits gir stor verdi. Det hindrer at teamet har for mange oppgaver, som vil gi lengre ledetid.
 
  
 ## Kultur
@@ -206,7 +206,7 @@ En bedre kultur bygges gjennom kryssfunksjonelt samarbeid, å skape rom og tradi
 **Følgende egenskaper er viktige egenskaper for en god kultur:**
 
 ### Generativ kultur
-En generativ kultur kjennetegnes av god informasjonsflyt, høy grad av samarbeid og tillit, brobygging mellom teams, felles ansvar, nye ideer ønskes velkommen, man oppfordres til å si fra om feil og mangler (messenger not shot) og man holder såkalte blameless postmortems hvor man lærer av feil fremfor å plassere skyld.
+En generativ kultur kjennetegnes av god informasjonsflyt, høy grad av samarbeid og tillit, brobygging mellom teams, felles ansvar, nye ideer ønskes velkommen, man oppfordres til å si fra om feil og mangler (_messenger not shot_) og man holder såkalte _blameless postmortems_ hvor man lærer av feil fremfor å plassere skyld.
 
 En slik kultur er prestasjonsfremmende for organisasjonen. Det gir bedre leveranseevne og reduserer utbrenthet.
 
@@ -219,14 +219,14 @@ Man kan stimulere til innovasjon og initiativer gjennom å investere i teamene:
 - Arranger “yak days”, hvor det jobbes med teknisk gjeld (ikke nødvendigvis bugs) og forbedringer som ellers ikke prioriteres.
 - Hold jevnlige interne minikonferanser (foredrag, lyntaler, workshops, open space etc)
 - Sett av tid (google kjører 20%) til å eksperimentere med nye verktøy og teknologier.
-- Gjør det trygt å feile. Represalier gjør at folk ikke tør prøve nye ting. Feiling må ses på som en mulighet til læring. Kjør blameless postmortems for å finne ut hvordan prosesser og systemer kan forbedres. Det bidrar til innovasjon og kultur.
+- Gjør det trygt å feile. Represalier gjør at folk ikke tør prøve nye ting. Feiling må ses på som en mulighet til læring. Kjør _blameless postmortems_ for å finne ut hvordan prosesser og systemer kan forbedres. Det bidrar til innovasjon og kultur.
 
 ### Samarbeid mellom teams
 En kan stimulere til kryssfunksjonelt samarbeid ved å
 
-Bygge tillit mellom teamene (åpen kommunikasjon, lovnader holdes, forutsigbar opptreden selv under stress). 
-Tilrettelegge for flytting mellom avdelinger og teams. Om noen bytter til en annen rolle et annet sted i organisasjonen, kan det være av verdi for begge teams. Medarbeideren har med seg nyttig info om prosesser og utfordringer til det nye teamet, og det gamle får et naturlig kontaktpunkt for samarbeid.
-Aktivt søke, oppfordre til og belønne arbeid som krever kryssfunksjonelt samarbeid.
+- Bygge tillit mellom teamene (åpen kommunikasjon, lovnader holdes, forutsigbar opptreden selv under stress). 
+- Tilrettelegge for flytting mellom avdelinger og teams. Om noen bytter til en annen rolle et annet sted i organisasjonen, kan det være av verdi for begge teams. Medarbeideren har med seg nyttig info om prosesser og utfordringer til det nye teamet, og det gamle får et naturlig kontaktpunkt for samarbeid.
+- Aktivt søke, oppfordre til og belønne arbeid som krever kryssfunksjonelt samarbeid.
 
 ### Gjør arbeidet meningsfylt
 Drivere for medarbeidertilfredshet:
@@ -256,7 +256,7 @@ Transformasjonsledelse driver frem og forsterker effekten av de tekniske og orga
 - Utvikle riktig mindset gjennom å skape et miljø for læring.
 - Utvikle egne coacher.
 - Gjøre transformasjonen på sin egen måte
-    - Man kan la seg inspirere og lære av andre, men man bør ikke kopiere det andre gjør. Eksperimentering og tilpassing etter hva som funker for en gitt organisasjon, er det riktige å gjøre.
+    - Man kan la seg inspirere og lære av andre, men man bør ikke kopiere det andre gjør. Eksperimentering og tilpassing etter hva som funker for sin organisasjon, er det riktige å gjøre.
     - Ikke sette ut transformasjonen (lean, smidig etc) til en ekstern partner. Teamene vil da føle at det blir gjort mot de. Evne til forbedring, tilpasning og utvikling av prosesser og metoder osv nås via å ha eierskap til transformasjonen.
 
 ---
@@ -275,17 +275,17 @@ De fleste deployment-problemer skjer på grunn av en krøkkete deployment-proses
 
 Alt det som øker evnen til å levere kjapt og stabilt (kontinuerlig leveranse), reduserer stress og angst forbundet med deploy / release.
 
-Vi bør
-- Sørge for enkel deploy til ulike miljøer
+Vi bør derfor
+- Sørge for enkel deploy til ulike miljøer.
 - Bygge robuste systemer som kan detektere og tolerere feil i miljøer.
 - Sørge for at komponenter kan oppdateres uavhengig av hverandre.
-- Sørge for at alt, bortsett fra data, kan gjenopprettes fra versjonskontroll (konfig også)
+- Sørge for at alt, bortsett fra data, kan gjenopprettes fra versjonskontroll.
 
 ### Utbrenthet
 Disse fem faktorene er sterkt forbundet med utbrenthet:
 
-- Dårlig organisasjonskultur (maktorientert, frykt, plassering av skyld osv)
-- Deployment pain
-- Lite effektivt lederskap (teamet har for mange oppgaver samtidig, fjerner ikke hindere o.l)
-- Lite investering i og utvikling av ansatte
-- Dårlig kollektiv prestasjon (_organization performance_)
+- Dårlig organisasjonskultur (maktorientert, frykt, tilbakeholding av informasjon, plassering av skyld osv).
+- Deployment pain.
+- Lite effektivt lederskap (teamet har for mange oppgaver samtidig, hindere fjernes ikke osv).
+- Lite investering i og utvikling av ansatte.
+- Dårlig kollektiv prestasjon (_organization performance_).
