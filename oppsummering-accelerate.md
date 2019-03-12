@@ -111,7 +111,9 @@ En må ha nok testdata til å kjøre alle automatiske tester. Testdata, eller ma
 
 Sikkerhetseksperter må være proaktive og bidra i applikasjonsdesign, gi feedback underveis i utviklingen, samt sørge for at sikkerhet inngår i den automatiserte testriggen. De må gjøre det enkelt for utviklere med flere å gjøre de rette tingene mtp sikkerhet. 
 
-Det er motsatt fra den mer tradisjonelle tilnærmingen, hvor en gjør sikkerhetsgjennomgang på tampen – når det er både dyrt og vanskelig å gjøre endringer. Nøyaktig det samme kan sies om f.eks universell utforming og brukeropplevelse også.
+Det er motsatt fra den mer tradisjonelle tilnærmingen, hvor en gjør sikkerhetsgjennomgang på tampen – når det er både dyrt og vanskelig å gjøre endringer. 
+
+Det samme kan sies om f.eks universell utforming og brukeropplevelse også.
 
 ### Implementering av kontinuerlig leveranse
 Kontinuerlig leveranse er en måte å jobbe på hvor programvaren er i en releasebar tilstand hele tiden, gjennom hele livssyklusen. Teamet prioriterer releasebarhet over nye features. Informasjon om kvalitet og releasebarhet er tilgjengelig for alle teammedlemmer hele tiden. Når systemet ikke er i en releasebar tilstand, blir det fikset med en gang.
