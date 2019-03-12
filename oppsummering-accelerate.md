@@ -80,21 +80,21 @@ De som er gode på kontinuerlig leveranse..
 Innføring av kontinuerlig leveranse krever imidlertid ofte at en må tenke helt nytt – fra hvordan teams fungerer og hvordan de samhandler med hverandre, til hvilke verktøy og prosesser de bruker. Resultatet er at det skapes et miljø hvor de i større grad tar ansvar for globale utfall som høy kvalitet og stabilitet.
 
 
-### Drivere og viktige egenskaper for kontinuerlig leveranse
+**Følgende er viktige drivere og egenskaper for kontinuerlig leveranse:**
 
-#### Nesten alt i versjonskontroll
+### Nesten alt i versjonskontroll
 Undersøkelsene viser at konfigurasjon i versjonskontroll, er sterkere korrelert til høy prestasjon enn kode i versjonskontroll. Miljøer bør kunne provisjoneres, og kode bør kunne bygges, testes og deployes automatisk fra versjonskontroll. Legg alt, bortsett fra data, i versjonskontroll.
 
-#### Automatisert deploy
+### Automatisert deploy
 Deploy bør ikke kreve manuelle steg.
 
-#### Continuous integration
+### Continuous integration
 Første steg på veien mot kontinuerlig leveranse. Det er en praksis hvor kode merges ofte til et delt repository. Hver endring trigger en bygge-, test- og deployprosess (til testmiljø e.l). Dersom noe feiler, fikses det der og da.  Kortlevde brancher (under en dags arbeid) er enklere å merge / integrere enn brancher som lever i flere dager og uker, og det skaper mindre overhead.
 
-#### Trunk-based development
+### Trunk-based development
 Undersøkelsene viser at kortlevde brancher er sterkt korrelert til høy prestasjon. De beste teamene har som regel færre enn tre aktive brancher på samme tid, og branchene lever typisk kortere enn en dag før de merges til master. Videre opplever disse teamene sjelden eller aldri kodefrysperioder. Dette er uavhengig av team- eller organisasjonsstørrelse og type industri.   
 
-#### Automatisiert testing
+### Automatisiert testing
 Automatiserte tester bør kjøres kontinuerlig gjennom hele utviklingsløpet, og trigges automatisk ved commit / push (som del av deployment pipeline). De må være pålitelige og finne reelle feil, slik at bare releasebar kode godkjennes. Utviklere bør også kunne kjøre automatiske tester lokalt på / fra maskinene sine, for å være i stand til å vurdere, rangere og fikse defekter.
 
 Slike tester bør skrives og vedlikeholdes av utviklere. Da oppnår en to viktige ting;
@@ -103,16 +103,17 @@ Slike tester bør skrives og vedlikeholdes av utviklere. Da oppnår en to viktig
 
 Automatiske tester som lages og vedlikeholdes av QA-avdeling eller annen tredjepart har ingen korrelasjon til bra leveransetakt og -evne. Testere spiller fortsatt en viktig rolle. De bør gjøre manuell og utforskende testing / akseptansetesting, samt jobbe sammen med utviklere om å lage / definere automatiske tester. Siste bygg bør alltid være tilgjengelig for testere (manuell utforskende testing).
 
-#### Test data management
+### Test data management
 En må ha nok testdata til å kjøre alle automatiske tester. Testdata, eller mangel på det, må ikke danne føringer / begrensninger for hvilke tester en kan kjøre. Samtidig er det poeng å ikke ha for mye testdata også (effektivitet, vedlikehold osv). Testdata må være tilgjengelig på forespørsel / ved behov.
 
-#### Test sikkerhet tidlig (Shift left on security)
+### Test sikkerhet tidlig (Shift left on security)
 Å integrere sikkerhet tidlig i utviklingsprosessen og gjennom hele livssyklusen til et produkt, er viktig for leveranseevne og kvalitet. Det gir mindre brannslukking. 
 
 Sikkerhetseksperter må være proaktive og bidra i applikasjonsdesign, gi feedback underveis i utviklingen, samt sørge for at sikkerhet inngår i den automatiserte testriggen. De må gjøre det enkelt for utviklere med flere å gjøre de rette tingene mtp sikkerhet. 
 
 Det er motsatt fra den mer tradisjonelle tilnærmingen, hvor en gjør sikkerhetsgjennomgang på tampen – når det er både dyrt og vanskelig å gjøre endringer. Nøyaktig det samme kan sies om f.eks universell utforming og brukeropplevelse også.
-Implementering av kontinuerlig leveranse
+
+### Implementering av kontinuerlig leveranse
 Kontinuerlig leveranse er en måte å jobbe på hvor programvaren er i en releasebar tilstand hele tiden, gjennom hele livssyklusen. Teamet prioriterer releasebarhet over nye features. Informasjon om kvalitet og releasebarhet er tilgjengelig for alle teammedlemmer hele tiden. Når systemet ikke er i en releasebar tilstand, blir det fikset med en gang.
 
 
@@ -154,21 +155,22 @@ Smidig er jevnt over den foretrukne utviklingsmetoden, men blir ofte mangelfullt
 
 Effektivisering av leveranseprosessen gjør det enklere å jobbe med mindre bolker om gangen, samt innhente bruker-feedback underveis. Å levere i mindre bolker gir raskere _feedback_ loops_.
 
-### Viktige egenskaper for en effektiv prosess
-#### Innhente og dra nytte av tilbakemelding fra brukere
+**Følgende er viktige egenskaper for en effektiv prosess:**
+
+### Innhente og dra nytte av tilbakemelding fra brukere
 Et poeng i smidig utvikling er å involvere brukerne tidlig i utviklingsløpet, for å få nyttig input og tilbakemeldinger. Disse tilbakemeldingene brukes så videre i neste steg av prosessen, før man jakter nye tilbakemeldinger igjen (feedback loop).
 
 Forskningen viser at å aktivt søke tilbakemeldinger fra brukere, samt inkorporere lærdommen i produktet, er viktig for prestasjonen.
 
-#### Visualisering av oppgaveflyt og verdikjede
+### Visualisering av oppgaveflyt og verdikjede
 Visualisering av prosess og gjennomstrømming av oppgaver, samt oversikt over og forståelse av verdikjeden (hele veien fra forretning til kunde), har betydning for leveranseevnen.
 
 Visualisering (f.eks Kanban) av arbeidsflyten og gjennomstrømming av oppgaver gjør det enkelt for alle å se hvem som jobber med hva, hva som er status på ulike oppgaver, hvor mange baller som er i lufta og hvorvidt noe er blokkert – som i at involvering av utenforstående og / eller eskalering er nødvendig. Det får igang viktig kommunikasjon.
 
-#### Arbeide med små bolker om gangen
+### Arbeide med små bolker om gangen
 En bør dele opp arbeidet i små biter som kan ferdigstilles på en uke eller mindre. Det gir hurtigere og mer effektiv utvikling enn å jobbe med store og komplekse features på egne brancher over lang tid. Det gir kortere ledetid og raskere feedback loops.
 
-#### Eksperimentering
+### Eksperimentering
 Hvis teamet ikke får lov til å reagere på læringen fra tilbakemeldingene, uten godkjenning fra noen utenfor teamet, reduseres innovasjonsevnen drastisk. Organisasjonens prestasjon (profitt, produktivitet og markedsandel) reduseres også.
 
 En forutsetning for effektiv eksperimentering er at det jobbes med små bolker om gangen, at arbeidsflyten gjennom leveranseprosessen er visualisert og at at bruker-feedback inkorporeres i produktets design. Det gir gjennomtenkte beslutninger, som kommuniseres ut i organisasjonen (visualisering av prosess og oppgaver). Det øker også sannsynligheten for fornøyde brukere og at det skapes verdi.
@@ -176,7 +178,7 @@ En forutsetning for effektiv eksperimentering er at det jobbes med små bolker o
 ## Lean management
 Lean management fører til bedre kultur (generativ), bedre leveranseevne og redusert utbrenthet.
 
-Følgende er viktige egenskaper ved lean management:
+*Følgende er viktige egenskaper ved lean management:*
  
 ### Enkel prosess for godkjenning av endringer
 Parprogrammering og pull request internt i teamet, kombinert med deploy pipeline (push - bygg - test - deploy / release) for å bl.a oppdage og avslå endringer av lav kvalitet, er effektivt. Produksjonssetting / release bør være en helautomatisert prosess, som trigges gjennom deployment pipeline.
@@ -199,7 +201,7 @@ Et interessant funn er at WIP-limits alene ikke har stor betydning for leveranse
 ## Kultur
 En bedre kultur bygges gjennom kryssfunksjonelt samarbeid, å skape rom og tradisjon for læring, samt sørge for effektiv bruk av verktøy.
 
-Viktige egenskaper:
+**Følgende egenskaper er viktige egenskaper for en god kultur:**
 
 ### Generativ kultur
 En generativ kultur kjennetegnes av god informasjonsflyt, høy grad av samarbeid og tillit, brobygging mellom teams, felles ansvar, nye ideer ønskes velkommen, man oppfordres til å si fra om feil og mangler (messenger not shot) og man holder såkalte blameless postmortems hvor man lærer av feil fremfor å plassere skyld.
@@ -225,28 +227,30 @@ Tilrettelegge for flytting mellom avdelinger og teams. Om noen bytter til en ann
 Aktivt søke, oppfordre til og belønne arbeid som krever kryssfunksjonelt samarbeid.
 
 ### Gjør arbeidet meningsfylt
-Både leveranseevne og medarbeidertilfredshet påvirkes positivt av å la teamene velge verktøyene sine selv. Om de har verktøy til å gjøre jobben slik de vil, blir de mer engasjerte (og effektive), og de gjør en bedre jobb. 
+Drivere for medarbeidertilfredshet:
 
-En annen driver for medarbeidertilfredshet, er å skape en kultur for eksperimentering og læring gjennom utnytting av teknologi (f.eks automatisering) kombinert med prinsipper fra lean management. 
+- La teamene velge verktøyene sine selv. Om de har verktøy til å gjøre jobben slik de vil, blir de mer engasjerte (og effektive), og de gjør en bedre jobb. 
+- Kultur for eksperimentering og læring gjennom utnytting av teknologi (f.eks automatisering) kombinert med prinsipper fra lean management.
+- Ansatte har innflytelse på egen hverdag
 
 Bedre medarbeidertilfredshet gir bedre prestasjon, som gir konkurransefortrinn. Høy prestasjon og leveransetakt har dessuten en selvforsterkende effekt; Teamene får validert ideene sine oftere, som gir høyere tilfredshet, som gir høyere prestasjon.
 
 Det motsatte er fortsatt ofte tilfelle. Teams får overlevert kravspesifikasjoner, og må levere arbeid i store bolker om gangen. Det fører til liten kontroll over produktet som lages og hvilken effekt det har for kunder. Det er demotiverende, og de ansatte distanserer seg dermed mer fra organisasjonen, fremfor å identifisere seg med den. Det gir dårligere organisasjonskultur og dårligere prestasjon.
 
-### ransformasjonsledelse
+### Transformasjonsledelse
 En god leder forsterker teamets evne til å levere høy kvalitet i høyt tempo. Høytpresterende organisasjoner har engasjerte ledere som er gode på teknologi- og transformasjonsledelse, noe som er essensielt for en vellykket omstilling (til smidig / lean, DevOps e.l).
 
-Transformasjonsledelse driver frem og forsterker effekten av de tekniske og organisatoriske praksisene som korrelerer med høy prestasjon (kontinuerlig leveranse, lean management osv). Det går ut på å jobbe sammen med teamene for å identifisere nødvendig endring, samt skape og presentere en visjon for hvordan komme i havn. Også handler det om å inspirere og motivere til engasjement for organisasjonens mål og visjoner. 
+Transformasjonsledelse driver frem og forsterker effekten av de tekniske og organisatoriske praksisene som korrelerer med høy prestasjon (kontinuerlig leveranse, lean management osv). Det går ut på å jobbe sammen med teamene for å identifisere nødvendig endring, samt skape og presentere en visjon for hvordan komme i havn. 
 
-For å lykkes med omstilling, bør en leder 
+**For å lykkes med omstilling, bør en leder**
 - Være visjonær. Ha klare meninger om hvilken retning organisasjonen skal bevege seg, og hvor den skal være fem år frem i tid.
-- Være inspirerende og motiverende
+- Inspirere og motivere til engasjement for organisasjonens mål og visjoner.
 - Gi intellektuell stimulans. Utfordre positivt. Oppfordre til nytenkning og å utfordre status quo.
 - Være støttende. Bry seg om personlige behov og følelser.
 - Gi personlig anerkjennelse. Legge merke til hva som oppnås og presteres, og gi personlig skryt når noen gjør noe bra.
 
 
-Mer overordnet må man
+**Mer overordnet må man**
 - Utvikle riktig mindset gjennom å skape et miljø for læring.
 - Utvikle egne coacher.
 - Gjøre transformasjonen på sin egen måte
@@ -256,18 +260,18 @@ Mer overordnet må man
 ---
 
 ## Bærekraftig arbeidsliv
-For å forsikre at høy rapportert leveranseprestasjon ikke ble oppnådd gjennom tvang og på bekostning av teamets mentale helse, ble både utbrenthet og deployment pain også målt.
+Grad av utbrenthet og _deployment pain_ ble målt for å forsikre at høy rapportert leveranseprestasjon ikke ble oppnådd gjennom tvang og på bekostning av teamets mentale helse.
 
 ### Deployment pain
-Deployment pain: Frykten man føler når kode dras ut i produksjon eller når en release skal installeres.
+_Deployment pain_: Frykten man føler når kode dras ut i produksjon eller når en release skal installeres.
 
-Der hvor deployment pain er verst, finner man også den dårligste leveranseevnen, dårligst kultur og dårligst presterende organisasjon.
+Der hvor _deployment pain_ er verst, finner man også den dårligste leveranseevnen, dårligst kultur og dårligst presterende organisasjon.
 
 Microsoft: **Før Bing-teamet implementerte kontinuerlig leveranse, scoret de 38% på life/work balance blant de ansatte. Etterpå spratt det opp til 75%**.
 
-De fleste deployment-problemer skjer på grunn av en krøkkete deployment-prosess med avhengigheter til en bestemt konfigurasjon osv. Sannsynligheten for feil i deploy / release øker i tillegg betraktelig når prosessen krever manuelle endringer.
+De fleste deployment-problemer skjer på grunn av en krøkkete deployment-prosess med avhengigheter til en bestemt konfigurasjon osv. Sannsynligheten for feil i deploy / release _øker betraktelig_ når prosessen krever manuelle endringer.
 
-Alt det som øker evnen til å levere kjapt og stabilt (kontinuerlig leveranse), reduserer i tillegg stress og angst forbundet med deploy / release.
+Alt det som øker evnen til å levere kjapt og stabilt (kontinuerlig leveranse), reduserer stress og angst forbundet med deploy / release.
 
 Vi bør
 - Sørge for enkel deploy til ulike miljøer
@@ -282,6 +286,4 @@ Disse fem faktorene er sterkt forbundet med utbrenthet:
 - Deployment pain
 - Lite effektivt lederskap (teamet har for mange oppgaver samtidig, fjerner ikke hindere o.l)
 - Lite investering i og utvikling av ansatte
-- Dårlig kollektiv prestasjon (organization performance)
-
-Undersøkelser viser at lean management og praksiser fra kontinuerlige leveranser hever leveranseevnen, som igjen påvirker organisasjonens prestasjon. Det reduserer både utbrenthet og f.eks deployment pain. Lean management betyr blant annet at ansatte får tid og ressurser til å forbedre seg gjennom f.eks prøving, feiling og læring – innenfor vanlig arbeidstid – samt ta avgjørelser som har betydning for egen hverdag. 
+- Dårlig kollektiv prestasjon (_organization performance_)
