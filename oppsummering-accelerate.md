@@ -151,7 +151,7 @@ Teams bør snakke sammen, men de bør bruke “båndbredden” til å snakke om 
 ## Lean og smidig produktutvikling
 Har smidig utvikling positiv innvirkning på organisasjonens prestasjon, målt i produktivitet, markedsandel og profitt? Ja.
 
-Smidig er jevnt over den foretrukne utviklingsmetoden, men blir ofte mangelfullt implementert. Organisasjonskultur og mer overordnede samarbeidsprosesser blir ikke tatt tak i. Det er fortsatt vanlig at bedrifter bruker lang tid på budsjettering, analyser og innhenting av krav før utviklingsarbeidet starter, for så å release i store bolker og ved ujevne mellomrom. Tilbakemeldinger fra kunder er innvirkning på sluttresultatet, og blir bare til ettertanke.
+Smidig er jevnt over den foretrukne utviklingsmetoden, men blir ofte mangelfullt implementert. Organisasjonskultur og mer overordnede samarbeidsprosesser blir ikke tatt tak i. Det er fortsatt vanlig at bedrifter bruker lang tid på budsjettering, analyser og innhenting av krav før utviklingsarbeidet starter, for så å release i store bolker og ved ujevne mellomrom. Tilbakemeldinger fra kunder er uten innvirkning på sluttresultatet, og blir bare til ettertanke.
 
 **Lean / smidig produktutvikling** står for det motsatte; Eksperimentell tilnærming med hyppig brukertesting av både design og forretningsmodell, fra starten av produktets livssyklus. Arbeidet deles opp i mindre bolker som leveres fortløpende.
 
