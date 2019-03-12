@@ -15,17 +15,17 @@ Denne oppsummeringen tar for seg resultatene fra undersøkelsene.
 
 ---
 
-**TL;DR**: Lean management, kultur og kontinuerlig leveranse har alt å si. For å være konkurransedyktig, holder det ikke lenger med business as usual. Store prosjekter med lang ledetid (tid fra start til kunde har noe kjørende) er avleggs. I stedet bør man ha små teams som jobber i korte iterasjoner, med løpende feedback fra brukere, for å lage produkter og tjenester som brukerne liker og som skaper verdi. Kontinuerlig forbedring, i måten å jobbe på, er viktig. 
+**TL;DR**: Lean management, kultur og kontinuerlig leveranse har alt å si. For å være konkurransedyktig, holder det ikke lenger med _business as usual_. Store prosjekter med lang ledetid (tid fra start til kunde har noe kjørende) er avleggs. I stedet bør man ha små teams som jobber i korte iterasjoner, med løpende feedback fra brukere, for å lage produkter og tjenester som brukerne liker og som skaper verdi. Kontinuerlig forbedring, i måten å jobbe på, er viktig. 
 
 --- 
 
 Måling av prestasjon er brutt ned til fire separate målepunkter:
 
 1. **Delivery lead time (Lean)**  
-Her er ledetid målt som tiden det tar fra kode committes, til den kjører i produksjon / release. Kort ledetid er bra da det muliggjør korte feedback loops (kjapp tilbakemelding fra brukere) på det som lages, slik at vi kan korrigere kursen tidlig og ofte. 
+Her er ledetid målt som tiden det tar fra kode committes, til den kjører i produksjon / release. Kort ledetid er bra da det muliggjør korte _feedback loops_ (kjapp tilbakemelding fra brukere) på det som lages, slik at vi kan korrigere kursen tidlig og ofte. 
 
 2. **Deployment frequency / batch size (Lean)**  
-Å levere få endringer i slengen (small batch size), gjør at en får de ut raskere. Det gir bedre flyt, reduserer risiko og overhead, forbedrer effektiviteten, øker motivasjonen og reduserer kostnader. I boka er deployment frequency brukt som en proxy for batch size, da batch size er relativt og vanskelig å måle på tvers av de man undersøker.
+Å levere få endringer i slengen (_small batch size_), gjør at en får de ut raskere. Det gir bedre flyt, reduserer risiko og overhead, forbedrer effektiviteten, øker motivasjonen og reduserer kostnader. I boka er _deployment frequency_ brukt som en proxy for _batch size_, da _batch size_ er relativt og vanskelig å måle på tvers av de man undersøker.
 
 3. **Time to restore service**  
 Hvor lang tid tar det å gjenopprette når noe feiler eller går ned?
