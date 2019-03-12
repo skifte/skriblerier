@@ -69,8 +69,7 @@ Disse fem prinsippene er selve kjernen av kontinuerlig leveranse:
 
 De som er gode på kontinuerlig leveranse..  
 
-- Bruker mindre tid på ikke-planlagt og unødvendig dobbeltarbeid enn andre. 
-    - Ikke-planlagt arbeid er hva man får om man f.eks kjører tom for bensin i stedet for å følge med på bensinmåleren. Man ender opp med å bruke mye tid på en problem som kunne og burde vært unngått.
+- Bruker mindre tid på ikke-planlagt arbeid og dobbeltarbeid, som kunne vært ungått, enn andre. 
 - Oppnår høyere prestasjon (lead time, deploy frequence, time to restore service)
 - Har lav change / fail rate
 - Har en bedre og mer positiv og utforskende (generativ) kultur
@@ -141,7 +140,7 @@ Det motsatte er gjerne tilfelle for _low performers_. Flere utviklere = færre d
 For å oppnå dette må vi ha **kryssfunksjonelle teams**, som besitter all nødvendig kompetanse for å designe, utvikle, teste, deploye og drifte systemene.
 
 ### Arkitektur gjenspeiler organisasjonsstruktur
-Conways lov sier at IT-arkitekturen gjenspeiler organisasjonsstrukturen. Forskningen, som gjennomgås i boka, underbygger det som ofte kalles _Inverse Conway maneuver_; Organisasjons- og teamstruktur må designes etter den arkitekturen en ønsker å oppnå. Målet med IT-arkitekturen er å støtte teamene i å få jobben gjort – fra design til utrulling – med lav båndbredde på kommunikasjonen mellom teamene. Løse koblinger og kommunikasjon mellom systemer løses med mikrotjenester og veldefinerte API-er.
+Conways lov sier at IT-arkitekturen gjenspeiler organisasjonsstrukturen. Forskningen, som gjennomgås i boka, underbygger det som ofte kalles _Inverse Conway maneuver_; Organisasjons- og teamstruktur må designes etter den arkitekturen en ønsker å oppnå. Målet med IT-arkitekturen er å støtte teamene i å få jobben gjort – fra design til utrulling – med lav båndbredde på kommunikasjonen mellom teamene. Kommunikasjon mellom systemer løses med mikrotjenester og veldefinerte API-er.
 
 Teams bør snakke sammen, men de bør bruke “båndbredden” til å snakke om felles overordnede mål og hvordan de kan nås, fremfor implementasjonsdetaljer.
 
@@ -149,84 +148,83 @@ Teams bør snakke sammen, men de bør bruke “båndbredden” til å snakke om 
 ## Lean og smidig produktutvikling
 Har smidig utvikling positiv innvirkning på organisasjonens prestasjon, målt i produktivitet, markedsandel og profitt? Ja.
 
-Fire egenskaper ble undersøkt:
-Leveres små bolker om gangen?
-Er arbeidsflyten og gjennomstrømningen av oppgaver visualisert?
-Innhentes feedback fra brukere (brukertesting og -undersøkelser)?
-Har utviklingsteamet myndighet til å lage + endre spesifikasjoner, basert på slik feedback, uten godkjenning fra noen utenfor teamet?
-
 Smidig er jevnt over den foretrukne utviklingsmetoden, men blir ofte mangelfullt implementert. Organisasjonskultur og mer overordnede samarbeidsprosesser blir ikke tatt tak i. Det er fortsatt vanlig at bedrifter bruker lang tid på budsjettering, analyser og innhenting av krav før utviklingsarbeidet starter, for så å release i store bolker og ved ujevne mellomrom. Tilbakemeldinger fra kunder er innvirkning på sluttresultatet, og blir bare til ettertanke.
 
-Lean / smidig produktutvikling står for det motsatte; Eksperimentell tilnærming med hyppig brukertesting av både design og forretningsmodell, fra starten av produktets livssyklus. Arbeidet deles opp i mindre bolker som leveres fortløpende.
+**Lean / smidig produktutvikling** står for det motsatte; Eksperimentell tilnærming med hyppig brukertesting av både design og forretningsmodell, fra starten av produktets livssyklus. Arbeidet deles opp i mindre bolker som leveres fortløpende.
 
-Effektivisering av leveranseprosessen gjør det enklere å jobbe med mindre bolker om gangen, samt innhente bruker-feedback underveis. Å levere i mindre bolker gir raskere feedback loops.
-.
-Viktige egenskaper
-Innhente og dra nytte av tilbakemelding fra brukere
+Effektivisering av leveranseprosessen gjør det enklere å jobbe med mindre bolker om gangen, samt innhente bruker-feedback underveis. Å levere i mindre bolker gir raskere _feedback_ loops_.
+
+### Viktige egenskaper for en effektiv prosess
+#### Innhente og dra nytte av tilbakemelding fra brukere
 Et poeng i smidig utvikling er å involvere brukerne tidlig i utviklingsløpet, for å få nyttig input og tilbakemeldinger. Disse tilbakemeldingene brukes så videre i neste steg av prosessen, før man jakter nye tilbakemeldinger igjen (feedback loop).
 
 Forskningen viser at å aktivt søke tilbakemeldinger fra brukere, samt inkorporere lærdommen i produktet, er viktig for prestasjonen.
 
-Visualisering av oppgaveflyt og verdikjede
+#### Visualisering av oppgaveflyt og verdikjede
 Visualisering av prosess og gjennomstrømming av oppgaver, samt oversikt over og forståelse av verdikjeden (hele veien fra forretning til kunde), har betydning for leveranseevnen.
 
 Visualisering (f.eks Kanban) av arbeidsflyten og gjennomstrømming av oppgaver gjør det enkelt for alle å se hvem som jobber med hva, hva som er status på ulike oppgaver, hvor mange baller som er i lufta og hvorvidt noe er blokkert – som i at involvering av utenforstående og / eller eskalering er nødvendig. Det får igang viktig kommunikasjon.
-Arbeide med små bolker om gangen
+
+#### Arbeide med små bolker om gangen
 En bør dele opp arbeidet i små biter som kan ferdigstilles på en uke eller mindre. Det gir hurtigere og mer effektiv utvikling enn å jobbe med store og komplekse features på egne brancher over lang tid. Det gir kortere ledetid og raskere feedback loops.
-Eksperimentering
+
+#### Eksperimentering
 Hvis teamet ikke får lov til å reagere på læringen fra tilbakemeldingene, uten godkjenning fra noen utenfor teamet, reduseres innovasjonsevnen drastisk. Organisasjonens prestasjon (profitt, produktivitet og markedsandel) reduseres også.
 
 En forutsetning for effektiv eksperimentering er at det jobbes med små bolker om gangen, at arbeidsflyten gjennom leveranseprosessen er visualisert og at at bruker-feedback inkorporeres i produktets design. Det gir gjennomtenkte beslutninger, som kommuniseres ut i organisasjonen (visualisering av prosess og oppgaver). Det øker også sannsynligheten for fornøyde brukere og at det skapes verdi.
 
-Lean management
+## Lean management
 Lean management fører til bedre kultur (generativ), bedre leveranseevne og redusert utbrenthet.
 
-Viktige egenskaper 
-Enkel prosess for godkjenning av endringer
+Følgende er viktige egenskaper ved lean management:
+ 
+### Enkel prosess for godkjenning av endringer
 Parprogrammering og pull request internt i teamet, kombinert med deploy pipeline (push - bygg - test - deploy / release) for å bl.a oppdage og avslå endringer av lav kvalitet, er effektivt. Produksjonssetting / release bør være en helautomatisert prosess, som trigges gjennom deployment pipeline.
 
 Teams som må ha code review og godkjenning av noen utenfor teamet (f.eks manager / change advisory board), presterer dårligere. Det gir heller ikke bedre stabilitet. 
 
-Ekstern godkjenning gir lengre ledetid, tregere leveransetakt og har ingenting å si for change/failure-rate. Det er verre enn å ikke ha en godkjenningsprosess i det hele tatt. I boka blir det blir beskrevet som “risk management theater”. Det er teamet som kjenner systemet og som best forstår effekten av endringene.
+Ekstern godkjenning gir lengre ledetid, tregere leveransetakt og har ingenting å si for change/failure-rate. Det er verre enn å ikke ha en godkjenningsprosess i det hele tatt. I boka blir det blir beskrevet som “**risk management theater**”. Det er teamet som kjenner systemet og som best forstår effekten av endringene.
 
-Overvåking av applikasjoner og infrastruktur
+### Overvåking av applikasjoner og infrastruktur
 Data og lærdom fra overvåking av applikasjoner og infrastruktur kan brukes til å treffe bedre beslutninger. I tillegg til overvåking for varsling feil, bør man kjøre helsesjekker som kan varsle basert på terskelverdier og rate-of-change warnings, f.eks om CPU har økt med 25% de siste 10 minuttene.
 
 Synligheten og gjennomsiktigheten som oppnås ved effektiv overvåking er uvurderlig. Proaktiv monitorering er sterkt relatert til prestasjon og medarbeidertilfredshet, og er en viktig del av en teknisk rigg.
 
-WIP-limits og visualisering av arbeid
-Work in progress (WIP) limit definerer hvor mange oppgaver teamet kan håndtere samtidig. Meningen med WIP-limits er å optimalisere flyt (gjennom å f.eks unngå context switching) ved å begrense antall samtidige oppgaver. Det øker gjennomstrømningen av oppgaver og synliggjør flaskehalser.
+### WIP-limits og visualisering av arbeid
+_Work in progress (WIP) limit_ definerer hvor mange oppgaver teamet kan håndtere samtidig. Meningen med WIP-limits er å optimalisere flyt (gjennom å f.eks unngå context switching) ved å begrense antall samtidige oppgaver. Det øker gjennomstrømningen av oppgaver og synliggjør flaskehalser.
 
 Et interessant funn er at WIP-limits alene ikke har stor betydning for leveranseevne. Det er først når det kombineres med visuelle oversikter (f.eks kanban-tavler / skjermer, som viser work in progress) og feedback loops fra produksjon, at WIP-limits gir stor verdi. Det hindrer at teamet har for mange oppgaver, som vil gi lengre ledetid.
 
  
-Kultur
+## Kultur
 En bedre kultur bygges gjennom kryssfunksjonelt samarbeid, å skape rom og tradisjon for læring, samt sørge for effektiv bruk av verktøy.
-Viktige egenskaper
-Generativ kultur
+
+Viktige egenskaper:
+
+### Generativ kultur
 En generativ kultur kjennetegnes av god informasjonsflyt, høy grad av samarbeid og tillit, brobygging mellom teams, felles ansvar, nye ideer ønskes velkommen, man oppfordres til å si fra om feil og mangler (messenger not shot) og man holder såkalte blameless postmortems hvor man lærer av feil fremfor å plassere skyld.
 
 En slik kultur er prestasjonsfremmende for organisasjonen. Det gir bedre leveranseevne og reduserer utbrenthet.
-Rom for læring og forbedring
+
+### Rom for læring og forbedring
 Man kan stimulere til innovasjon og initiativer gjennom å investere i teamene:
  
-Ha et eget kompetansebudsjett, og oppfordre til å bruke det. La folk bestemme selv hvilke kurs, konferanser e.l de vil delta på, ut fra egne interesser og behov.
-Oppmuntre til deltagelse på minst en konferanse i året, og å i etterkant oppsummere hva man har lært for teamet / organisasjonen.
-Arranger hackathon / hack days, hvor tverrfaglige teams kan skape og prøve ut nye ideer.
-Arranger “yak days”, hvor det jobbes med teknisk gjeld (ikke nødvendigvis bugs) og forbedringer som ellers ikke prioriteres.
-Hold jevnlige interne minikonferanser (foredrag, lyntaler, workshops, open space etc)
-Sett av tid (google kjører 20%) til å eksperimentere med nye verktøy og teknologier.
-Gjør det trygt å feile. Represalier gjør at folk ikke tør prøve nye ting. Feiling må ses på som en mulighet til læring. Kjør blameless postmortems for å finne ut hvordan prosesser og systemer kan forbedres. Det bidrar til innovasjon og kultur.
+- Ha et eget kompetansebudsjett, og oppfordre til å bruke det. La folk bestemme selv hvilke kurs, konferanser e.l de vil delta på, ut fra egne interesser og behov.
+- Oppmuntre til deltagelse på minst en konferanse i året, og å i etterkant oppsummere hva man har lært for teamet / organisasjonen.
+- Arranger hackathon / hack days, hvor tverrfaglige teams kan skape og prøve ut nye ideer.
+- Arranger “yak days”, hvor det jobbes med teknisk gjeld (ikke nødvendigvis bugs) og forbedringer som ellers ikke prioriteres.
+- Hold jevnlige interne minikonferanser (foredrag, lyntaler, workshops, open space etc)
+- Sett av tid (google kjører 20%) til å eksperimentere med nye verktøy og teknologier.
+- Gjør det trygt å feile. Represalier gjør at folk ikke tør prøve nye ting. Feiling må ses på som en mulighet til læring. Kjør blameless postmortems for å finne ut hvordan prosesser og systemer kan forbedres. Det bidrar til innovasjon og kultur.
 
-Samarbeid mellom teams
+### Samarbeid mellom teams
 En kan stimulere til kryssfunksjonelt samarbeid ved å
 
 Bygge tillit mellom teamene (åpen kommunikasjon, lovnader holdes, forutsigbar opptreden selv under stress). 
 Tilrettelegge for flytting mellom avdelinger og teams. Om noen bytter til en annen rolle et annet sted i organisasjonen, kan det være av verdi for begge teams. Medarbeideren har med seg nyttig info om prosesser og utfordringer til det nye teamet, og det gamle får et naturlig kontaktpunkt for samarbeid.
 Aktivt søke, oppfordre til og belønne arbeid som krever kryssfunksjonelt samarbeid.
 
-Gjør arbeidet meningsfylt
-
+### Gjør arbeidet meningsfylt
 Både leveranseevne og medarbeidertilfredshet påvirkes positivt av å la teamene velge verktøyene sine selv. Om de har verktøy til å gjøre jobben slik de vil, blir de mer engasjerte (og effektive), og de gjør en bedre jobb. 
 
 En annen driver for medarbeidertilfredshet, er å skape en kultur for eksperimentering og læring gjennom utnytting av teknologi (f.eks automatisering) kombinert med prinsipper fra lean management. 
@@ -235,56 +233,55 @@ Bedre medarbeidertilfredshet gir bedre prestasjon, som gir konkurransefortrinn. 
 
 Det motsatte er fortsatt ofte tilfelle. Teams får overlevert kravspesifikasjoner, og må levere arbeid i store bolker om gangen. Det fører til liten kontroll over produktet som lages og hvilken effekt det har for kunder. Det er demotiverende, og de ansatte distanserer seg dermed mer fra organisasjonen, fremfor å identifisere seg med den. Det gir dårligere organisasjonskultur og dårligere prestasjon.
 
-Transformasjonsledelse
+### ransformasjonsledelse
 En god leder forsterker teamets evne til å levere høy kvalitet i høyt tempo. Høytpresterende organisasjoner har engasjerte ledere som er gode på teknologi- og transformasjonsledelse, noe som er essensielt for en vellykket omstilling (til smidig / lean, DevOps e.l).
 
 Transformasjonsledelse driver frem og forsterker effekten av de tekniske og organisatoriske praksisene som korrelerer med høy prestasjon (kontinuerlig leveranse, lean management osv). Det går ut på å jobbe sammen med teamene for å identifisere nødvendig endring, samt skape og presentere en visjon for hvordan komme i havn. Også handler det om å inspirere og motivere til engasjement for organisasjonens mål og visjoner. 
-For å lykkes med omstilling, bør en leder 
 
-Være visjonær. Ha klare meninger om hvilken retning organisasjonen skal bevege seg, og hvor den skal være fem år frem i tid.
-Være inspirerende og motiverende
-Gi intellektuell stimulans. Utfordre positivt. Oppfordre til nytenkning og å utfordre status quo.
-Være støttende. Bry seg om personlige behov og følelser.
-Gi personlig anerkjennelse. Legge merke til hva som oppnås og presteres, og gi personlig skryt når noen gjør noe bra.
+For å lykkes med omstilling, bør en leder 
+- Være visjonær. Ha klare meninger om hvilken retning organisasjonen skal bevege seg, og hvor den skal være fem år frem i tid.
+- Være inspirerende og motiverende
+- Gi intellektuell stimulans. Utfordre positivt. Oppfordre til nytenkning og å utfordre status quo.
+- Være støttende. Bry seg om personlige behov og følelser.
+- Gi personlig anerkjennelse. Legge merke til hva som oppnås og presteres, og gi personlig skryt når noen gjør noe bra.
 
 
 Mer overordnet må man
+- Utvikle riktig mindset gjennom å skape et miljø for læring.
+- Utvikle egne coacher.
+- Gjøre transformasjonen på sin egen måte
+    - Man kan la seg inspirere og lære av andre, men man bør ikke kopiere det andre gjør. Eksperimentering og tilpassing etter hva som funker for en gitt organisasjon, er det riktige å gjøre.
+    - Ikke sette ut transformasjonen (lean, smidig etc) til en ekstern partner. Teamene vil da føle at det blir gjort mot de. Evne til forbedring, tilpasning og utvikling av prosesser og metoder osv nås via å ha eierskap til transformasjonen.
 
-Utvikle riktig mindset gjennom å skape et miljø for læring.
-Utvikle egne coacher.
-Gjøre transformasjonen på sin egen måte
-Man kan la seg inspirere og lære av andre, men man bør ikke kopiere det andre gjør. Eksperimentering og tilpassing etter hva som funker for en gitt organisasjon, er det riktige å gjøre.
-Ikke sette ut transformasjonen (lean, smidig etc) til en ekstern partner. Teamene vil da føle at det blir gjort mot de. Evne til forbedring, tilpasning og utvikling av prosesser og metoder osv nås via å ha eierskap til transformasjonen.
+---
 
-
-
-Bærekraftig arbeidsliv
+## Bærekraftig arbeidsliv
 For å forsikre at høy rapportert leveranseprestasjon ikke ble oppnådd gjennom tvang og på bekostning av teamets mentale helse, ble både utbrenthet og deployment pain også målt.
 
-Deployment pain
+### Deployment pain
 Deployment pain: Frykten man føler når kode dras ut i produksjon eller når en release skal installeres.
 
 Der hvor deployment pain er verst, finner man også den dårligste leveranseevnen, dårligst kultur og dårligst presterende organisasjon.
 
-Microsoft: Før Bing-teamet implementerte kontinuerlig leveranse, scoret de 38% på life/work balance blant de ansatte. Etterpå spratt det opp til 75%.
+Microsoft: **Før Bing-teamet implementerte kontinuerlig leveranse, scoret de 38% på life/work balance blant de ansatte. Etterpå spratt det opp til 75%**.
 
 De fleste deployment-problemer skjer på grunn av en krøkkete deployment-prosess med avhengigheter til en bestemt konfigurasjon osv. Sannsynligheten for feil i deploy / release øker i tillegg betraktelig når prosessen krever manuelle endringer.
 
 Alt det som øker evnen til å levere kjapt og stabilt (kontinuerlig leveranse), reduserer i tillegg stress og angst forbundet med deploy / release.
 
 Vi bør
-Sørge for enkel deploy til ulike miljøer
-Bygge robuste systemer som kan detektere og tolerere feil i miljøer.
-Sørge for at komponenter kan oppdateres uavhengig av hverandre.
-Sørge for at alt, bortsett fra data, kan gjenopprettes fra versjonskontroll (konfig også)
+- Sørge for enkel deploy til ulike miljøer
+- Bygge robuste systemer som kan detektere og tolerere feil i miljøer.
+- Sørge for at komponenter kan oppdateres uavhengig av hverandre.
+- Sørge for at alt, bortsett fra data, kan gjenopprettes fra versjonskontroll (konfig også)
 
-Utbrenthet
+### Utbrenthet
 Disse fem faktorene er sterkt forbundet med utbrenthet:
 
-Dårlig organisasjonskultur (maktorientert, frykt, plassering av skyld osv)
-Deployment pain
-Lite effektivt lederskap (teamet har for mange oppgaver samtidig, fjerner ikke hindere o.l)
-Lite investering i og utvikling av ansatte
-Dårlig kollektiv prestasjon (organization performance)
+- Dårlig organisasjonskultur (maktorientert, frykt, plassering av skyld osv)
+- Deployment pain
+- Lite effektivt lederskap (teamet har for mange oppgaver samtidig, fjerner ikke hindere o.l)
+- Lite investering i og utvikling av ansatte
+- Dårlig kollektiv prestasjon (organization performance)
 
 Undersøkelser viser at lean management og praksiser fra kontinuerlige leveranser hever leveranseevnen, som igjen påvirker organisasjonens prestasjon. Det reduserer både utbrenthet og f.eks deployment pain. Lean management betyr blant annet at ansatte får tid og ressurser til å forbedre seg gjennom f.eks prøving, feiling og læring – innenfor vanlig arbeidstid – samt ta avgjørelser som har betydning for egen hverdag. 
