@@ -1,9 +1,9 @@
-# Oppsummering av _Accelerate: The science of lean software and DevOps_
+# Oppsummering: _Accelerate, The science of lean software and DevOps_
 
 _Building and scaling high performing technology organizations.  
 Bok av Gene Kim, Jez Humble, og Nicole Forsgren._
 
-Boka handler om hva som skal til for å bli en mer leveransedyktig og høytpresterende IT-organisasjon, som leverer mer verdi på kortere tid. Den baserer seg på State of DevOps rapportene fra 2014-2018, og presenterer interessante funn. Forfatterne går vitenskapelig og nøye til verks i å svare på hva, hvorfor og hvordan rundt både tekniske og ledermessige metoder og praksis.
+Boka handler om hva som skal til for å bli en mer leveransedyktig og høytpresterende IT-organisasjon, som leverer mer verdi på kortere tid. Den baserer seg på _State of DevOps_ -rapportene fra 2014-2018. Forfatterne går vitenskapelig og nøye til verks i å svare på hva, hvorfor og hvordan rundt både tekniske og ledermessige metoder og praksis.
 
 Boka er tredelt: 
 
@@ -17,15 +17,9 @@ Denne oppsummeringen tar for seg første del.
 
 **TL;DR**: Lean management, kultur og kontinuerlig leveranse har alt å si. For å være konkurransedyktig, holder det ikke lenger med business as usual. Store prosjekter med lang ledetid (tid fra start til kunde har noe kjørende) er avleggs. I stedet bør man ha små teams som jobber i korte iterasjoner, med løpende feedback fra brukere, for å lage produkter og tjenester som brukerne liker og som skaper verdi. Kontinuerlig forbedring, i måten å jobbe på, er viktig. 
 
----
+--- 
 
-## Gjennomføring av undersøkelser og måling av prestasjon
-
-En vellykket måling av en organisasjons leveranseevne og -takt (prestasjon) må fokusere på globale utfall for organisasjonen som helhet. Blant annet for å sikre at teams og avdelinger ikke blir målt på ulike ting, som kan føre til at de motarbeider hverandre. Det kan for eksempel være at en utviklingsavdeling måles på antall leverte features (kvantitet), mens drift måles på stabilitet. Det kan resultere i at dårlig kvalitet kastes over gjerdet til drift, som da svarer med smertefulle endringsprosesser. De trekker i hver sin retning, og er i konflikt, fremfor å jobbe sammen mot felles (globalt) mål.
-
-Undersøkelsene som er gjort her, fokuserer på globale (_system level_) mål, og måler utfall som ulike funksjoner / avdelinger må samarbeide om å oppnå.
-
-Fire forskjellige målepunkter er brukt, for å måle prestasjon:
+Måling av prestasjon er brutt ned til fire separate målepunkter:
 
 1. **Delivery lead time (Lean)**  
 Her er ledetid målt som tiden det tar fra kode committes, til den kjører i produksjon / release. Kort ledetid er bra da det muliggjør korte feedback loops (kjapp tilbakemelding fra brukere) på det som lages, slik at vi kan korrigere kursen tidlig og ofte. 
@@ -49,7 +43,6 @@ Høytpresterende organisasjoner har:
 
 ---
 
-## Resultater fra undersøkelsene
 Boka avdekker 24 nøkkelegenskaper og drivere for høy prestasjon. Egenskapene er delt opp i fem kategorier:
 
 - Kontinuerlig leveranse
@@ -59,7 +52,7 @@ Boka avdekker 24 nøkkelegenskaper og drivere for høy prestasjon. Egenskapene e
 - Kultur
 
 
-### Kontinuerlig leveranse
+## Kontinuerlig leveranse
 Kontinuerlig leveranse er sett med egenskaper og teknikker som gjør det mulig å få alle slags endringer ut i produksjon på en kjapp, trygg og kontrollert måte. Prodsetting / release bør være en enkel rutine, som kan utføres når som helst og innenfor vanlig arbeidstid.
 
 Disse fem prinsippene er selve kjernen av kontinuerlig leveranse:
@@ -86,21 +79,21 @@ Teams som er gode på kontinuerlig leveranse..
 - Har uproblematiske og enkle deploys (ikke smertefull)
 - Opplever mindre utbrenthet 
 
-#### Drivere og viktige egenskaper for kontinuerlig leveranse
+### Drivere og viktige egenskaper for kontinuerlig leveranse
 
-##### Nesten alt i versjonskontroll
+#### Nesten alt i versjonskontroll
 Undersøkelsene viser at konfigurasjon i versjonskontroll, er sterkere korrelert til høy prestasjon enn kode i versjonskontroll. Miljøer bør kunne provisjoneres, og kode bør kunne bygges, testes og deployes automatisk fra versjonskontroll. Legg alt, bortsett fra data, i versjonskontroll.
 
-##### Automatisert deploy
+#### Automatisert deploy
 Deploy bør ikke kreve manuelle steg.
 
-##### Continuous integration
+#### Continuous integration
 Første steg på veien mot kontinuerlig leveranse. Det er en praksis hvor kode merges ofte til et delt repository. Hver endring trigger en bygge-, test- og deployprosess (til testmiljø e.l). Dersom noe feiler, fikses det der og da.  Kortlevde brancher (under en dags arbeid) er enklere å merge / integrere enn brancher som lever i flere dager og uker, og det skaper mindre overhead.
 
-##### Trunk-based development
+#### Trunk-based development
 Undersøkelsene viser at kortlevde brancher er sterkt korrelert til høy prestasjon. De beste teamene har som regel færre enn tre aktive brancher på samme tid, og branchene lever typisk kortere enn en dag før de merges til master. Videre opplever disse teamene sjelden eller aldri kodefrysperioder. Dette er uavhengig av team- eller organisasjonsstørrelse og type industri.   
 
-##### Automatisiert testing
+#### Automatisiert testing
 Automatiserte tester bør kjøres kontinuerlig gjennom hele utviklingsløpet, og trigges automatisk ved commit / push (som del av deployment pipeline). De må være pålitelige og finne reelle feil, slik at bare releasebar kode godkjennes. Utviklere bør også kunne kjøre automatiske tester lokalt på / fra maskinene sine, for å være i stand til å vurdere, rangere og fikse defekter.
 
 Slike tester bør skrives og vedlikeholdes av utviklere. Da oppnår en to viktige ting;
@@ -109,10 +102,10 @@ Slike tester bør skrives og vedlikeholdes av utviklere. Da oppnår en to viktig
 
 Automatiske tester som lages og vedlikeholdes av QA-avdeling eller annen tredjepart har ingen korrelasjon til bra leveransetakt og -evne. Testere spiller fortsatt en viktig rolle. De bør gjøre manuell og utforskende testing / akseptansetesting, samt jobbe sammen med utviklere om å lage / definere automatiske tester. Siste bygg bør alltid være tilgjengelig for testere (manuell utforskende testing).
 
-##### Test data management
+#### Test data management
 En må ha nok testdata til å kjøre alle automatiske tester. Testdata, eller mangel på det, må ikke danne føringer / begrensninger for hvilke tester en kan kjøre. Samtidig er det poeng å ikke ha for mye testdata også (effektivitet, vedlikehold osv). Testdata må være tilgjengelig på forespørsel / ved behov.
 
-##### Test sikkerhet tidlig (Shift left on security)
+#### Test sikkerhet tidlig (Shift left on security)
 Å integrere sikkerhet tidlig i utviklingsprosessen og gjennom hele livssyklusen til et produkt, er viktig for leveranseevne og kvalitet. Det gir mindre brannslukking. 
 
 Sikkerhetseksperter må være proaktive og bidra i applikasjonsdesign, gi feedback underveis i utviklingen, samt sørge for at sikkerhet inngår i den automatiserte testriggen. De må gjøre det enkelt for utviklere med flere å gjøre de rette tingene mtp sikkerhet. 
@@ -122,7 +115,7 @@ Implementering av kontinuerlig leveranse
 Kontinuerlig leveranse er en måte å jobbe på hvor programvaren er i en releasebar tilstand hele tiden, gjennom hele livssyklusen. Teamet prioriterer releasebarhet over nye features. Informasjon om kvalitet og releasebarhet er tilgjengelig for alle teammedlemmer hele tiden. Når systemet ikke er i en releasebar tilstand, blir det fikset med en gang.
 
 
-### Arkitektur
+## Arkitektur
 Høy leveransetakt og -evne er mulig med alle slags systemer, så fremt både systemene og teamene, som bygger og vedlikeholder de, er løst koblet. Det muliggjør at man enkelt kan teste og deploye individuelle komponenter og tjenester, selv om organisasjonen og antall systemer skaleres. 
 
 Følgende egenskaper (deployability and testability) er viktige for høy leveransetakt:
