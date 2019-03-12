@@ -3,15 +3,15 @@
 _Building and scaling high performing technology organizations.  
 Bok av Gene Kim, Jez Humble, og Nicole Forsgren._
 
-Boka handler om hva som skal til for å bli en mer leveransedyktig og høytpresterende IT-organisasjon, som leverer mer verdi på kortere tid. Den baserer seg på _State of DevOps_ -rapportene fra 2014-2018. Forfatterne går vitenskapelig og nøye til verks i å svare på hva, hvorfor og hvordan rundt både tekniske og ledermessige metoder og praksis.
+Boka handler om hva som skal til for å bli en mer leveransedyktig og høytpresterende IT-organisasjon, som leverer mer verdi på kortere tid. Den baserer seg på _State of DevOps_ -rapportene fra 2014-2018. Forfatterne går vitenskapelig og nøye til verks i å svare på hva, hvorfor og hvordan rundt både tekniske metoder praksiser og ledelse.
 
 Boka er tredelt: 
 
-1. Første del handler om funn som er gjort i undersøkelsene. 
-2. Andre del handler om vitenskapen bak undersøkelsene (hvordan stille riktige spørsmål på riktig måte, jobbe med statistikken osv). 
-3. Tredje del er et case studie fra ING (bank i Nederland), som har gjennomgått en smidig transformasjon. 
+1. Resultater fra undersøkelsene. 
+2. Vitenskapen bak undersøkelsene (hvordan stille riktige spørsmål på riktig måte, jobbe med statistikken osv). 
+3. Case studie fra ING (bank i Nederland), som har gjennomgått en smidig transformasjon. 
 
-Denne oppsummeringen tar for seg første del.
+Denne oppsummeringen tar for seg resultatene fra undersøkelsene.
 
 ---
 
@@ -67,17 +67,19 @@ Disse fem prinsippene er selve kjernen av kontinuerlig leveranse:
 
 - **Felles ansvar**. En må samarbeide på tvers av avdelinger for å nå organisasjonens overordnede mål (_system level outcomes_). Det er et lederansvar å sørge for at alle til enhver tid vet hvordan organisasjonen ligger an mht ønsket overordnet utfall, samt jobbe med hele organisasjonen for å få definert målbare, oppnåelige og tidsbegrensede mål, slik at alle drar i samme retning. Typisk for byråkratiske organisasjoner, er at avdelinger måles på ulike og motstridende ting, slik at de i stedet ender med å motarbeide hverandre (f.eks drift vs utvikling).
 
-De som er gode på kontinuerlig leveranse, bruker mindre tid på ikke-planlagt og unødvendig dobbeltarbeid enn andre. Det vitner om at de er bedre på kvalitet. Ikke-planlagt arbeid er hva man får om man f.eks kjører tom for bensin i stedet for å følge med på bensinmåleren. Man ender opp med å bruke mye tid på en problem som kunne og burde vært unngått.
+De som er gode på kontinuerlig leveranse..  
 
-Kontinuerlig leveranse forbedrer både leveransetakt og kvalitet. Det bidrar til en bedre kultur, og til å redusere utbrenthet og deployment pain. Innføring av kontinuerlig leveranse krever imidlertid ofte at en må tenke helt nytt – fra hvordan teams fungerer og hvordan de samhandler med hverandre, til hvilke verktøy og prosesser de bruker. Resultatet er at det skapes et miljø hvor de i større grad tar ansvar for globale utfall som høy kvalitet og stabilitet.
-
-Teams som er gode på kontinuerlig leveranse..
-- Identifiserer seg sterkt med organisasjonen de jobber for 
+- Bruker mindre tid på ikke-planlagt og unødvendig dobbeltarbeid enn andre. 
+    - Ikke-planlagt arbeid er hva man får om man f.eks kjører tom for bensin i stedet for å følge med på bensinmåleren. Man ender opp med å bruke mye tid på en problem som kunne og burde vært unngått.
 - Oppnår høyere prestasjon (lead time, deploy frequence, time to restore service)
 - Har lav change / fail rate
 - Har en bedre og mer positiv og utforskende (generativ) kultur
-- Har uproblematiske og enkle deploys (ikke smertefull)
+- Identifiserer seg sterkt med organisasjonen de jobber for.
+- Har uproblematiske og enkle deploys. Ingen _deployment pain_ (frykt og ubehag knyttet til deploy / release).
 - Opplever mindre utbrenthet 
+
+Innføring av kontinuerlig leveranse krever imidlertid ofte at en må tenke helt nytt – fra hvordan teams fungerer og hvordan de samhandler med hverandre, til hvilke verktøy og prosesser de bruker. Resultatet er at det skapes et miljø hvor de i større grad tar ansvar for globale utfall som høy kvalitet og stabilitet.
+
 
 ### Drivere og viktige egenskaper for kontinuerlig leveranse
 
@@ -118,33 +120,33 @@ Kontinuerlig leveranse er en måte å jobbe på hvor programvaren er i en releas
 ## Arkitektur
 Høy leveransetakt og -evne er mulig med alle slags systemer, så fremt både systemene og teamene, som bygger og vedlikeholder de, er løst koblet. Det muliggjør at man enkelt kan teste og deploye individuelle komponenter og tjenester, selv om organisasjonen og antall systemer skaleres. 
 
-Følgende egenskaper (deployability and testability) er viktige for høy leveransetakt:
+Følgende egenskaper (_deployability and testability_) er viktige for høy leveransetakt:
 
-Teamet må kunne endre, deploye og release applikasjoner uten avhengigheter til andre applikasjoner og teams.
-Teamet kan gjøre større endringer i design av et system uten å måtte innhente godkjenning fra eksterne (noen utenfor teamet).
-Teamet kan ferdigstille arbeid uten å koordinere med utenforstående.
-Teamet kan release et produkt eller tjeneste ved behov og på forespørsel.
-Teamet kan gjøre det meste av testing på sparket, uten behov for et integrert testmiljø (integrated test environment).
-Deploy kan gjøres innenfor vanlig arbeidstid, uten nevneverdig nedetid.
+1. Teamet må kunne endre, deploye og release applikasjoner uten avhengigheter til andre applikasjoner og teams.
+2. Teamet kan gjøre større endringer i design av et system uten å måtte innhente godkjenning fra eksterne (noen utenfor teamet).
+3. Teamet kan ferdigstille arbeid uten å koordinere med utenforstående.
+4. Teamet kan release et produkt eller tjeneste ved behov og på forespørsel.
+5. Teamet kan gjøre det meste av testing på sparket, uten behov for et integrert testmiljø (integrated test environment).
+6. Deploy kan gjøres innenfor vanlig arbeidstid, uten nevneverdig nedetid.
+7. Teamene kan velge verktøyene sine selv.
 
-Der en scorer høyt på slike arkitekturegenskaper, kreves lite kommunikasjon mellom ulike teams for å få jobben gjort. Arkitekturen er designet for at teamene skal kunne jobbe (endre, teste, deploye) selvstendig og uavhengig av andre. Både teamene og arkitekturen er da løst koblet. 
+Der en scorer høyt på slike arkitekturegenskaper, kreves lite kommunikasjon mellom ulike teams for å få jobben gjort. Arkitekturen er designet for at teamene skal kunne jobbe (endre, teste, deploye) selvstendig og uavhengig av andre. Både teamene og arkitekturen er da **løst koblet**. 
 
-For å oppnå dette må vi ha kryssfunksjonelle teams, som besitter all nødvendig kompetanse for å designe, utvikle, teste, deploye og drifte systemene.
+En løst koblet og velfungerende IT-arkitektur med en matchende organisasjonsstruktur, muliggjør to ting:
+1. Bedre leveranseevne med økt tempo og stabilitet, mens utbrenthet og _deployment pain_ reduseres.
+2. Organisasjonen kan vokse, mens produktiviteten samtidig øker lineært, eller bedre. 
 
-Arkitektur gjenspeiler organisasjonsstruktur
-Conways lov sier at IT-arkitekturen gjenspeiler organisasjonsstrukturen. Forskningen, som gjennomgås i boka, underbygger det som ofte kalles Inverse Conway maneuver; Organisasjons- og teamstruktur må designes etter den arkitekturen en ønsker å oppnå. Målet med IT-arkitekturen er å støtte teamene i å få jobben gjort – fra design til utrulling – med lav båndbredde på kommunikasjonen mellom teamene. Løse koblinger og kommunikasjon mellom systemer løses med mikrotjenester og veldefinerte API-er.
+Det motsatte er gjerne tilfelle for _low performers_. Flere utviklere = færre deploys per tidsenhet per utvikler.
+
+For å oppnå dette må vi ha **kryssfunksjonelle teams**, som besitter all nødvendig kompetanse for å designe, utvikle, teste, deploye og drifte systemene.
+
+### Arkitektur gjenspeiler organisasjonsstruktur
+Conways lov sier at IT-arkitekturen gjenspeiler organisasjonsstrukturen. Forskningen, som gjennomgås i boka, underbygger det som ofte kalles _Inverse Conway maneuver_; Organisasjons- og teamstruktur må designes etter den arkitekturen en ønsker å oppnå. Målet med IT-arkitekturen er å støtte teamene i å få jobben gjort – fra design til utrulling – med lav båndbredde på kommunikasjonen mellom teamene. Løse koblinger og kommunikasjon mellom systemer løses med mikrotjenester og veldefinerte API-er.
 
 Teams bør snakke sammen, men de bør bruke “båndbredden” til å snakke om felles overordnede mål og hvordan de kan nås, fremfor implementasjonsdetaljer.
-Viktige egenskaper
-Arkitekturen er løst koblet 
-En løst koblet og velfungerende IT-arkitektur med en matchende organisasjonsstruktur, muliggjør to ting:
-Bedre leveranseevne med økt tempo og stabilitet, mens utbrenthet og deployment pain reduseres.
-Organisasjonen kan vokse, mens produktiviteten samtidig øker lineært, eller bedre. 
 
-Det motsatte er gjerne tilfelle for low performers (flere utviklere = færre deploys per tidsenhet per utvikler). High performers –  som har en målorientert og positiv kultur, modulær arkitektur, arbeidsmetoder som muliggjør kontinuerlig leveranse, samt effektivt lederskap – oppnår derimot høyere fart etter hvert som flere kommer til.
-Teamene kan velge verktøyene sine selv
-Arkitekter bør fokusere på utviklerne og ønsket utfall, ikke på verktøy og teknologier. Hvilke verktøy og teknologier som brukes, er irrelevant dersom de som som må bruke de misliker det, eller om de da ikke oppnår ønsket utfall.
-Lean og smidig produktutvikling
+
+## Lean og smidig produktutvikling
 Har smidig utvikling positiv innvirkning på organisasjonens prestasjon, målt i produktivitet, markedsandel og profitt? Ja.
 
 Fire egenskaper ble undersøkt:
