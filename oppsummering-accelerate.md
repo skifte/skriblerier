@@ -70,7 +70,7 @@ Disse fem prinsippene er selve kjernen av kontinuerlig leveranse:
 De som er gode på kontinuerlig leveranse..  
 
 - Bruker mindre tid på ikke-planlagt arbeid og dobbeltarbeid, som kunne vært ungått, enn andre. 
-- Oppnår høyere prestasjon (lead time, deploy frequence, time to restore service)
+- Oppnår høyere prestasjon (lead time, deploy frequency, time to restore service)
 - Har lav change / fail rate
 - Har en bedre og mer positiv og utforskende (generativ) kultur
 - Identifiserer seg sterkt med organisasjonen de jobber for.
