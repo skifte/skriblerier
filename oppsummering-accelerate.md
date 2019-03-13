@@ -33,7 +33,7 @@ Hvor lang tid tar det å gjenopprette når noe feiler eller går ned?
 4. **Change fail rate**  
 Hvor stor andel av endringene som gjøres, forårsaker feil?
 
-Høytpresterende organisasjoner scorer bra på alt dette. Det viser at man ikke nødvendigvis må velge mellom hastighet, kvalitet og stabilitet. Man _kan_ få alt. De siste årene har de høyest presterende organisasjonene rykker fra røkla, slik at forskjellen øker. De beste forbedrer seg kontinuerlig. 
+Høytpresterende organisasjoner scorer bra på alt dette. Det viser at man ikke nødvendigvis må velge mellom hastighet, kvalitet og stabilitet. Man _kan_ få alt. De siste årene har de høyest presterende organisasjonene rykket fra røkla, slik at forskjellen øker. De beste forbedrer seg kontinuerlig. 
 
 Høytpresterende organisasjoner har:  
 - 46 ganger hyppigere deployments / release.
