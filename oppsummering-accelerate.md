@@ -203,7 +203,7 @@ Et interessant funn er at _WIP-limits_ alene ikke har stor betydning for leveran
 ## Kultur
 En bedre kultur bygges gjennom kryssfunksjonelt samarbeid, å skape rom og tradisjon for læring, samt sørge for effektiv bruk av verktøy.
 
-**Følgende egenskaper er viktige egenskaper for en god kultur:**
+**Følgende egenskaper er viktige egenskaper i en god kultur:**
 
 ### Generativ kultur
 En generativ kultur kjennetegnes av god informasjonsflyt, høy grad av samarbeid og tillit, brobygging mellom teams, felles ansvar, nye ideer ønskes velkommen, man oppfordres til å si fra om feil og mangler (_messenger not shot_) og man holder såkalte _blameless postmortems_ hvor man lærer av feil fremfor å plassere skyld.
@@ -288,4 +288,4 @@ Disse fem faktorene er sterkt forbundet med utbrenthet:
 - Deployment pain.
 - Lite effektivt lederskap (teamet har for mange oppgaver samtidig, hindere fjernes ikke osv).
 - Lite investering i og utvikling av ansatte.
-- Dårlig kollektiv prestasjon (_organization performance_).
+- Dårlig kollektiv prestasjon (_organizational performance_).
