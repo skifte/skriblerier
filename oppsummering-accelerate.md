@@ -36,8 +36,8 @@ Hvor stor andel av endringene som gjøres, forårsaker feil?
 Høytpresterende organisasjoner scorer bra på alt dette. Det viser at man ikke nødvendigvis må velge mellom hastighet, kvalitet og stabilitet. Man _kan_ få alt. De siste årene har de høyest presterende organisasjonene rykket fra røkla, slik at forskjellen øker. De beste forbedrer seg kontinuerlig. 
 
 Høytpresterende organisasjoner har:  
-- 46 ganger hyppigere deployments / release.
-- 440 ganger kortere ledetid fra commit til deploy og release.
+- 46 ganger hyppigere deploy av kode.
+- 440 ganger kortere ledetid fra commit til deploy.
 - 170 ganger raskere gjenoppretting etter feil og nedetid.
 - 5 ganger lavere change/failure rate.
 
@@ -54,6 +54,8 @@ Boka avdekker 24 nøkkelegenskaper og drivere for høy prestasjon. Egenskapene e
 
 ## Kontinuerlig leveranse
 Kontinuerlig leveranse er sett med egenskaper og teknikker som gjør det mulig å få alle slags endringer ut i produksjon på en kjapp, trygg og kontrollert måte. Prodsetting / release bør være en enkel rutine, som kan utføres når som helst og innenfor vanlig arbeidstid.
+
+Kontinuerlig leveranse betyr at programvaren alltid er i en releasebar tilstand, og at teamet prioriterer releasebarhet over nye features. Informasjon om kvalitet og releasebarhet bør være tilgjengelig for alle teammedlemmer hele tiden. Når systemet ikke er i en releasebar tilstand, blir det fikset med en gang.
 
 Disse fem prinsippene er selve kjernen av kontinuerlig leveranse:
 
@@ -113,10 +115,7 @@ Sikkerhetseksperter må være proaktive og bidra i applikasjonsdesign, gi feedba
 
 Det er motsatt fra den mer tradisjonelle tilnærmingen, hvor en gjør sikkerhetsgjennomgang på tampen – når det er både dyrt og vanskelig å gjøre endringer. 
 
-Det samme kan sies om f.eks universell utforming og brukeropplevelse også.
-
-### Implementering av kontinuerlig leveranse
-Kontinuerlig leveranse er en måte å jobbe på hvor programvaren er i en releasebar tilstand hele tiden, gjennom hele livssyklusen. Teamet prioriterer releasebarhet over nye features. Informasjon om kvalitet og releasebarhet er tilgjengelig for alle teammedlemmer hele tiden. Når systemet ikke er i en releasebar tilstand, blir det fikset med en gang.
+_Det samme kan sies om f.eks universell utforming også_.
 
 
 ## Arkitektur
