@@ -5,7 +5,9 @@ Bok av Gene Kim, Jez Humble, og Nicole Forsgren._
 
 ---
 ## Publisert på Smidigalliansens blogg
+
 Oppsummeringa har blitt publisert på https://medium.com/smidigalliansen/oppsummering-av-accelerate-the-science-of-lean-software-and-devops-c575cabbbb38. Les den heller der.
+
 ---
 
 Boka handler om hva som skal til for å bli en mer leveransedyktig og høytpresterende IT-organisasjon, som leverer mer verdi på kortere tid. Den baserer seg på [_State of DevOps_-rapportene](https://puppet.com/resources/whitepaper/state-of-devops-report) (global undersøkelse) fra 2014-2018. Forfatterne går vitenskapelig til verks i å forklare hva, hvorfor og hvordan rundt både ledelse og tekniske metoder og praksiser.
